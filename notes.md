@@ -1,5 +1,7 @@
 // NOTES
 
+gerbil
+
 // RESTful ROUTES:
 // INDEX = /things + GET | mongoose method: Thing.find() | show all things
 // NEW = /things/new + GET | mongoose method: N/A | show form to create new thing
