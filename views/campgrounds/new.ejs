@@ -1,0 +1,30 @@
+<% include ../partials/head %>
+
+    <h1 style="text-align: center;">Create a New Campground</h1>
+    <div class="row">
+        <form action="/campgrounds" method="POST" style="width: 30vw; margin: 0 auto;">
+            <div class="form-group">
+                <input type="text" class="form-control" id="inputCampName" aria-describedby="campNameHelp" name="name" placeholder="Campground Name">
+                <small id="campNameHelp" class="form-text text-muted">Please provide the name of the new campground</small>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" id="inputCampCost" aria-describedby="campCostHelp" name="cost" placeholder="Cost/Night" min="0.01" step="0.01">
+                <small id="campCostHelp" class="form-text text-muted">Please provide the price per night of the new campground in CAD</small>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" id="inputCampImgURL" aria-describedby="campImgURLHelp" name="imageURL" placeholder="Campground Image">
+                <small id="campImgURLHelp" class="form-text text-muted">Please provide an image link for the new campground</small>
+            </div>
+            <div class="form-group">
+                <input type="textarea" class="form-control" id="inputCampDesc" aria-describedby="campDescHelp" name="desc" placeholder="Campground Description">
+                <small id="campDescHelp" class="form-text text-muted">Please provide a description for the new campground</small>
+            </div>
+            <div class="btn-group">
+                <button type="submit" class="btn btn-primary">Submit</button>
+                <a class="btn btn-secondary" role="button" aria-disabled="true" href="/campgrounds">Back</a>
+            </div>
+        </form>
+        
+    </div>
+
+<% include ../partials/foot %>

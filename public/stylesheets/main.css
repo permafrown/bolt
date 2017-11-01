@@ -1,0 +1,20 @@
+body {
+    margin: 0 auto;
+    list-style-type: none;
+}
+
+#campgroundGrid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.TM {
+    font-size: 0.6rem;
+    margin: 5vh auto;
+}
+
+/*Google Maps*/
+/*#map {*/
+/*    height: 25vh;*/
+/*    width: 100%;*/
+/*}*/

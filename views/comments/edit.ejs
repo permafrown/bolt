@@ -1,0 +1,18 @@
+<% include ../partials/head %>
+
+    <h1 style="text-align: center;">Edit Your Comment</h1>
+    <div class="row">
+        <form action="/campgrounds/<%= campground_id %>/comments/<%= comment._id %>?_method=PUT" method="POST" style="width: 30vw; margin: 0 auto;">
+            <div class="form-group">
+                <input type="text" class="form-control" id="inputCommentText" aria-describedby="commentTextHelp" name="comment[text]" value="<%= comment.text %>">
+                <small id="commentTextHelp" class="form-text text-muted">Please provide a comment</small>
+            </div>
+            <div class="btn-group">
+                <button type="submit" class="btn btn-primary">Submit</button>
+                <a class="btn btn-secondary" role="button" aria-disabled="true" href="/campgrounds/<%= campground_id %>">Back</a>
+            </div>
+        </form>
+        
+    </div>
+
+<% include ../partials/foot %>
